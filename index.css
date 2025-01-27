@@ -107,7 +107,7 @@ body {
         .about-image {
             flex: 1;
             max-width: 300px;
-            margin:3em;
+            margin: 3em;
             border-radius: 10px;
             overflow: hidden;
         }
@@ -185,9 +185,32 @@ body {
 .logo-item img{
     width: 100%;
     height: auto;
+    border-radius: .5em;
 }
+@media (max-width: 768px) {
+  section#worked-with .container {
+    padding: 10px; /* Reduced padding for mobile */
+  }
 
-        .software-section {
+  section#worked-with .container h2 {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+    margin-bottom: 0.5rem;
+  }
+
+  section#worked-with .container p {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+    line-height: 0.4em;
+  }
+
+  section#worked-with .container img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+    max-width: 300px; /* Smaller image width for mobile */
+    margin:  auto;
+  
+  }
+}
+.software-section {
             text-align: center;
             padding: 2em;
             background: #000;
